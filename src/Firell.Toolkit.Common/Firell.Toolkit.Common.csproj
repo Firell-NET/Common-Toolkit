@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Firell.Toolkit.Common</PackageId>
+		<Title>Firell Common Toolkit</Title>
+		<Version>1.0.0</Version>
+		<Authors>Firell</Authors>
+		<Company>Firell</Company>
+		<Product>Firell Toolkit</Product>
+		<Description>A versatile .NET toolkit that offers a variety of classes, including helpers, extensions, and other useful features, which can help simplify daily tasks.</Description>
+		<Copyright>Copyright (c) 2023-$([System.DateTime]::Now.ToString('yyyy')) Firell. All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/Trix07/Firell-Common-Toolkit</RepositoryUrl>
+		<PackageTags>Firell, Toolkit, .NET, Helpers, Extensions, Converters</PackageTags>
+		<PackageIcon>PackageIcon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="PackageIcon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="PackageIcon.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Common" Version="8.2.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+	</ItemGroup>
+</Project>
